@@ -1,0 +1,6 @@
+{
+  "zh": "路由器收到组播报文后，会先查询组播转发表。如果开启了 IGMP snooping，交换芯片只会把报文转发给加入该组的端口，其余端口不会收到，这样可以显著减少局域网内的无效流量。",
+  "en": "When the router receives a multicast packet, it first looks up the multicast forwarding table. With IGMP snooping enabled, the switch chip forwards the packet only to ports that have joined the group, so other ports never see it, which greatly reduces wasted traffic on the LAN.",
+  "mixed": "开启 IGMP snooping 后，组播流 239.1.1.1 的丢包率从 3.2% 降到 0",
+  "code_emoji": "for pkt in sniff(count=10): print(pkt.summary())  🚀"
+}
